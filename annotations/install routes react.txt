@@ -1,0 +1,44 @@
+yarn add react-router-dom
+
+new file routes.js
+
+folder > pages -> Main -> index.js
+
+import React from 'react'
+
+function Main() {
+    return <h1>Main</h1>
+}
+
+export default Main;
+
+
+folder > pages -> Repository -> index.js
+
+import React from 'react'
+
+function Repository() {
+    return <h1>Repository</h1>
+}
+
+export default Repository;
+
+
+routes.js
+
+import Main form '../pages/main';
+import Repository form '../pages/repository';
+
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
+
+export default function Routes(){
+    return (
+        <BrowserRouter>
+            <Switch>
+                <Route path="/" exact component={Main} />
+                <Route path="/repository" component={Repository} />
+            </Switch>
+        </BrowserRouter>
+    );
+}
