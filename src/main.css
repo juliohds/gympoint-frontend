@@ -50,3 +50,8 @@ table {
 .root {
     height: 100%;
 }
+
+textarea:focus, button, input:focus{
+    box-shadow: none;
+    outline: none;
+}

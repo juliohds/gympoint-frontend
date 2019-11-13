@@ -1,0 +1,70 @@
+@import '../../scss/variables.scss';
+
+.container {
+	background-color: $base-color;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	min-height: 100% !important;
+	height: 100%;
+}
+body {
+	min-height: 100% !important;
+	height: 100%;
+}
+#fullheight {
+	min-height: 100% !important;
+	height: 100%;
+	width: 250px;
+	background: $blue;
+}
+.input {
+	width: 100%;
+	padding: 5px;
+	margin-top: 5px;
+	border-radius: 2px;
+	border: 1px solid #eee;
+	height: 20px;
+}
+.label {
+	color: #8f8f8f;
+	font-family: 'Arial';
+	font-weight: 900;
+	font-size: 10px;
+}
+.form-field {
+	margin-bottom: 15px;
+}
+.form {
+	width: 245px;
+	background-color: white;
+	height: 320px;
+	border-radius: 2px;
+	padding: 20px 30px;
+}
+.image {
+	width: 140px;
+}
+.logo {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	display: flex;
+}
+.button {
+	width: 100%;
+	height: 30px;
+	border-radius: 2px;
+	background-color: #ef4c63;
+	border: 0;
+	color: white;
+}

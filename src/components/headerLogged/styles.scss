@@ -1,0 +1,53 @@
+@import '../../scss/variables.scss';
+
+.logoHeaderLogged {
+	width: 120px;
+}
+.headerLogo {
+	width: 150px;
+}
+
+.linkLogout {
+    margin-left: 5px;
+    color: $base-color;
+    font-family: Arial;
+}
+
+.menuLogout{
+    margin: 10px
+}
+
+.headerNameUser{
+    color: darken($gray, 10%);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $littleText
+
+}
+
+.linkLogout{
+    font-size: 13px;
+}
+
+.headerLoggedForm {
+	background-color: $white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 10px;
+}
+.headerMenu {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	flex: 1;
+	line-height: 30px;
+	border-left: 1px solid $gray;
+}
+.headerLabel {
+	margin-left: 15px;
+	text-transform: uppercase;
+	color: $gray;
+	font-family: 'Arial';
+	font-size: 12px;
+}

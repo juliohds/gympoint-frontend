@@ -1,11 +1,10 @@
 import React from 'react';
-import './login.css';
-
+import './styles.scss';
 import logo from '../../images/gympoint.png'; // Tell Webpack this JS file uses this image
 
 // import { Container } from './styles';
 
-export default function login() {
+export default function Login(props) {
     return (
         <div className="container">
             <div className="form">
@@ -34,7 +33,11 @@ export default function login() {
                         />
                     </label>
                 </div>
-                <button className="button" type="button">
+                <button
+                    className="button"
+                    onClick={() => props.history.push('/students')}
+                    type="button"
+                >
                     Entrar no sistema
                 </button>
             </div>
