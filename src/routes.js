@@ -6,11 +6,13 @@ import Login from './pages/login';
 
 export default function Routes() {
     return (
-        <BrowserRouter>
-            <Switch>
-                <Route path="/" exact component={Login} />
-                <Route path="/repository" component={Repository} />
-            </Switch>
-        </BrowserRouter>
+        <div style={{ height: '100%', backgroundColor: 'blue' }}>
+            <BrowserRouter>
+                <Switch>
+                    <Route path="/" exact component={Login} />
+                    <Route path="/repository" component={Repository} />
+                </Switch>
+            </BrowserRouter>
+        </div>
     );
 }
